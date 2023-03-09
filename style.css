@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {background-color: #222222; }
+
+    #header-name h1 {
+        color: #26C0E2;
+        text-align: left;
+    }
+        
+    #header-name h2 {color: #FFFFFF;}
+
+    .texto {
+        position: absolute;
+        left: 219px;
+        font-size: 30px;
+    }
+    
+    .inicio-tf span {color: #26C0E2;}
+
+    .inicio-tf {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        flex-direction: row-reverse;
+        width: 90%;
+        align-items: center;
+        padding: 13% 1% 5%;  
+    }
+    
+    .inicio-tf img {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        animation-name: slideInLeft;
+        animation-duration: 1.5s;
+        transition-duration: 0.3s;
+        transition-delay: 0s;
+        margin-left: 10%;
+    }
+        
+    .sobreMim {
+        padding: 8%;
+        justify-content: center;
+        border-top: 1px solid white;
+        padding-bottom: 100px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #computador {
+        display: flex;
+        height: 10%;
+        width: 20%;
+        border-radius: 30px;
+        margin: 34px;
+        transition: 0.5s;
+    }
+    
+    .sobreMimTexto {
+        text-align: center;
+        font-size: 23px;
+    }
+    
+    
+    .sobreMimTexto p {
+        color: white;
+        font-size: 22px;
+        margin-top: 30px;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    
+    .sobreMimTexto button {
+        background-color: #383838;
+        border-radius: 5px;
+        width: 85px;
+        height: 33px;
+        margin: 10px;
+        color: #3B9EBF;
+        margin-top: 30px;
+        border: none;
+        transition-duration: 0.3s;
+        transition-delay: 0s;
+        cursor: pointer;
+    }
+
+    .sobreMimTexto button:hover{
+        transform: translateY(-5px);
+        background-color: #3B9EBF;
+        color: white;
+    }
+    #tecnologias, #projetos {border-top: 1px solid white;}
+    
+    .topicoNomes h1 {
+        color: #26C0E2;
+        text-align: center;
+        font-size: 40px;
+        padding: 8%; 
+    }
+    
+    .tech-img {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+    
+    .tech-center li{
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 5px auto;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .tech-center p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.3;
+    width: 80%;
+    text-align: revert;
+}
+
+    .technologies img {
+        padding-bottom: 5px; 
+        display: flex;
+        cursor: pointer;
+        border-radius: 10px;
+        width: 15%;
+
+    }
+    
+    .computer img{
+        width: 50px;
+        height: 40px;
+    }
+    .contact p {
+        text-align: center;
+        margin-left: 10rem;
+        color: white;
+    }
+
+
+    .contact img {
+        border-radius: 20px;
+        width: 60px;
+    }
+    .nova h5:hover, #projetos a:hover{
+        color: #3B9EBF;
+        transition: color 0.3s;
+        animation-delay: 3s;
+    }
+    
+    .images-projetos img {
+        width: 300px;
+        height: 200px;
+        border-radius: 5px; 
+    }
+
+    .nova{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+  .contatos {
+    border-top: 1px solid white;
+    padding: 50px;
+    color: white;
+  }
+
+  .contatos h1 {
+    color: #26C0E2;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.contatos .info-contato {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contatos .info-contato .info-txt {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.contatos .info-contato .info-txt .div-icones {
+    padding: 40px;
+    width: 280px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contatos .info-contato .info-txt .icones {
+    height: 40px;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+}
+
+.contatos .info-contato .info-txt .icones:hover {
+    scale: 1.2;
+}
+
+.contatos .info-contato .computador {
+    height: 300px;
+    border-radius: 100px;
+    margin: 50px;
+    transition: 0.5s;
+}
+
+.contatos .info-contato .computador:hover {
+    scale: 1.1;
+}
+#profile:hover {
+    scale: 1.1;
+}
+#profile{
+    transition: 0.5s;
+}
+#computador:hover{
+    scale: 1.1;
+}
+
+
+a{text-decoration: none;}
+
+.desenvolvido {
+    background-color: #393939;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    padding: 11px;
+}
+.desenvolvido a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.desenvolvido a:hover {color: #26C0E2;}
+
+    #projetos a{
+        display: flex;
+        color: white;
+        justify-content: center;
+        margin-bottom: 80px;
+        font-size: 20px;
+        margin-top: 100px;
+        cursor: pointer;
+        font-weight: 100;
+    }
+   
+    .topicoNomes button {
+        background-color: #383838;
+        border-radius: 5px;
+        width: 85px;
+        height: 33px;
+        margin: 10px;
+        color: #3B9EBF;
+        margin-top: 30px;
+        border: none;
+        transition-duration: 0.3s;
+        transition-delay: 0s;
+        cursor: pointer;
+    }
+    
+    
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position:fixed;
+    background-color: #393939;
+    padding:20px;
+}
+
+.menu {
+    display: flex;
+    
+}
+.menu li {
+    padding-left: 30px;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {
+    width: 100%;
+}
+.open-menu , .close-menu {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {display: none;}
+    
+
+@media(max-width: 650px){
+
+    .inicio-tf {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio-tf p .inicio-tf span{
+        margin-top: 100px;
+        text-align: center;
+    }
+    .inicio-tf img {
+        display: flex;
+        width: 38%;
+        height: 50%;
+        margin-top: 88px;
+        margin-bottom: 18px;
+    }
+    #computador {
+        width: 30vh !important;
+        height: 30vh !important;
+
+        margin: auto;
+        padding: 10px;
+    }
+    .header-content h1, h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .styles-options li a {
+        display: none; 
+    }
+
+    .topicoNomes h1 {
+        color:#26C0E2; 
+        font-size: 28px;
+    }
+
+    .sobreMim {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sobreMimTexto p {
+        font-size: 13px !important;
+        text-align: center;
+    }
+
+    .sobreMimTexto button {
+        
+        font-size: 17px;
+        text-align: center;
+        width: 100px !important;
+        height: 40px !important;
+    }
+
+    .contatos .info-contato {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contatos .info-contato .computador {
+        width: 100%;
+        height: 100%;
+    }
+    .contatos h1 {
+        font-size: 28px;
+    }
+    .desenvolvido{
+        font-size: 15px;
+    }
+    #projetos a {
+        margin-top: 17px;
+        margin-bottom: 0px;
+    }
+
+    .images-projetos img{
+        margin-top: 20px;
+        align-items: center;
+        border: 1px solid white !important;
+    }
+    
+    .nova {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+        padding-bottom: 5vh;
+    }
+    
+    .technologies img{
+        display: flex;
+        width: 15%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .tech-center {
+        display: grid;
+    }
+    .tech-img {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+
+    .tech-center li{
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 11px;
+        text-align: center;
+        color: white;
+        margin-top: -12px;
+        font-family: Montserrat, sans-serif;
+       
+        display: flex; 
+    }
+
+    .topicoNomes h4{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 8%;
+    }
+    .topicoNomes h5 {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        padding: 8%;
+    }
+    .topicoNomes ul {
+        grid-template-columns: 1fr;
+    }
+    #header-name h1, h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #393939;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
